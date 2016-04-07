@@ -1,0 +1,98 @@
+
+body{
+  background-color: lightgary;
+  font-family: Comic Sans, Comic Sans MS, cursive, tahoma;
+  margin: 15px;
+  min-height: 600px;
+  min-width: 950px;
+  position: relative;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.folder{
+    color: blue;
+}
+
+.file{
+    color: green;
+}
+
+.element{
+    
+    padding: 5px;
+    position: relative;
+    margin-left: 20px;
+    width: 250px;
+    
+}
+
+h1{
+    font-size: 200%;
+}
+
+.comment{
+    width: 45%;
+}
+
+[aria-hidden="true"]{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.selected{
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px lightblue;;
+    outline: 0 none;
+    font-weight: bold;
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+.login-component{
+    position: absolute;
+    float:right;
+    right: 5px;
+    top: 10px;
+    width: 250px;
+    height: 225px;
+    border: 1px solid #337ab7;
+    padding:15px 15px 15px 15px;
+    border-radius: 4px;
+}
+
+.panel{
+    position: absolute;
+    right: 5px;
+    top: 240px;
+    width: 45%;
+    min-width: 250px;
+    height: 70%;
+    overflow-y: auto;
+}
+
+h4{
+    color: red;
+}
+
+.instructions{
+    width: 65%;
+}
+.panel{
+    border-color: #337ab7;
+}
+
+.panel-success>.panel-heading{
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+

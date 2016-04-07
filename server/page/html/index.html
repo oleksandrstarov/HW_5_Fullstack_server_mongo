@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Server folder structure</title>
+        <script type="text/javascript" src="./js/index.js" defer></script>
+        <script type="text/javascript" src="./js/ajaxUtils.js" defer></script>
+        <script type="text/javascript" src="./js/viewRender.js" defer></script>
+        <script type="text/javascript" src="./js/dataItem.js" defer></script>
+
+        <script type="text/javascript" src="./js/registrationFormView.js" defer></script>
+        <script type="text/javascript" src="./js/registrationHandler.js" defer></script>
+        <script type="text/javascript" src="./js/connectionManager.js" defer></script>
+        <script type="text/javascript" src="./js/processEngine.js" defer></script>
+        
+    </head>
+    <body>
+        <div class="instructions">
+            <h1>Folder structure from the server</h1>
+            <h5>You can use only letters, digits for registration with additional spaces, 
+            dots, commas and some more for commenting.<br/>
+            Once you login or register and select the folder - feel free to comment!
+            If you don't want to register, you still can read comments from the other users!<br/>
+            To delete your comment - just save empty form.
+            The items with comments marked with paperclip icon.</h5>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary">Send request</button>
+        </div>
+        <div id="container"></div>
+        <div class="form-group comment" hidden>
+            <label for="comment">Select item to read or write comment:</label>
+            <textarea class="form-control" readonly rows="3" id="comment"></textarea>
+            <button type="button" class="btn btn-success">Save</button>
+            <button type="button" class="btn btn-warning">Clear</button>
+            <button type="button" class="btn btn-danger">Cancel</button>
+        </div>
+        <div class="container"></div>
+        
+        
+        <div class="login-component">
+            <ul class="nav nav-tabs">
+                <li id="list-sign" role="presentation" class="active"><a href="#">Sign in</a></li>
+                <li id="list-register" role="presentation"><a href="#">Register</a></li>
+            </ul>
+            <form id="sign" class="form-signin">
+                <h5 id="sign-header" class="form-signin-heading">Please sign in</h5>
+                <input type="text" id="inputUsername" class="form-control" placeholder="Username" aria-describedby="basic-addon1" required="">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                <button id="submit" class="btn btn-primary btn-block" type="submit">Sign in</button>
+            </form>
+        </div>
+        
+
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">Comments</h3>
+          </div>
+          <div class="panel-body all-comments"></div>
+        </div>
+        <div class="instructions">
+            
+        </div>
+    </body>
+</html>
