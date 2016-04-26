@@ -1,0 +1,30 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "description": "Node server plus mongodb plus simple front-end page",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleksandrstarov/HW_5_Fullstack.git"
+  },
+  "author": "OS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oleksandrstarov/HW_5_Fullstack/issues"
+  },
+  "homepage": "https://github.com/oleksandrstarov/HW_5_Fullstack#readme",
+  "devDependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "http": "0.0.0",
+    "morgan": "^1.7.0"
+  },
+  "dependencies": {
+    "assert": "^1.3.0",
+    "mongodb": "^2.1.14"
+  }
+}
